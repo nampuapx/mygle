@@ -1,0 +1,125 @@
+string cmd = "";
+string s;
+real   n                = 9.0;       // turns
+real   wireWidth_mm     = 0.2;       // track width
+real   wireDistance_mm  = 0.3;       // min. distance between tracks
+real   distance_e       = 0.3;       // distance first wound to Ferrit
+real   PVdiameter       = 1.7;       // pad/via diameter
+real   PVdrill          = 1;       // drill diameter
+real   ferrit_length_L  = 5.5;
+real   ferrit_length_K  = 2.0;
+real   ferrit_length_K1 = 2.0;
+real   distance_h       = 5.3;
+real   x             = 0.0;
+real   y             = 0.0;
+int    n1;
+int    n2;
+int    Layer            = 1;
+int		x_count,y_count;
+string Shape            = "ROUND";   // Pad/Via shape do not change !!!
+string solderpoint      = "";
+//string dimlayer         = ";\nChange Layer 20;\n";<input type="radio" name="" value="">
+
+///PadViaS( solderpoint, kx1 + radius, 0.0, kx1 + radius, ky, offx, offy);
+//PadViaS( 5, 5, 0.0, 8, ky, 10, 10);
+
+string xyArc(real angle, real radiusx, real radiusy, real offsetx, real offsety) {
+  string tmp;
+  real rad = PI / 180 * angle;
+  sprintf(tmp, "(%.4f %.4f)\n",
+                 cos(rad) * radiusx + offsetx,
+                      sin(rad) * radiusy + offsety );
+  return tmp;
+}
+/*
+string PadViaS(string command, real x1, real y1, real angle, real g, real ox, real oy) {
+  real p = x1 + (wireWidth_mm / 2) - (PVdiameter / 2);  //
+  sprintf( s, "%s %s", command, xyArc(angle, p, 0.0, ox, oy) );
+  return s;
+}
+*/
+
+
+
+//void doit(void) {
+
+  sprintf( s, "GRID mm;\n");
+  cmd += s;
+/*  sprintf( s, "Change dia %.4f;\n", PVdiameter);
+  cmd += s;
+  sprintf( s, "Change shape %s;\n", Shape);
+  cmd += s;
+  sprintf( s, "Change drill %.4f;\n", PVdrill);
+  cmd += s;*/
+//  sprintf( s, "change width %.4f;\n", wireWidth_mm);
+//  cmd += s;
+ // sprintf( s, "Change layer %d;\n", Layer);
+ // cmd += s;
+//  cmd += "SET WIRE_BEND 2;\n";
+
+
+
+int hor = 1;
+int ver = 1;
+string fileName;
+int Result = dlgDialog("Enter Parameters") {
+  dlgHBoxLayout {
+    dlgStretch(1);
+    dlgLabel("BBEgu ckoka VIA no ukc u urpuk");
+    dlgStretch(1);
+    }
+ /* dlgHBoxLayout {
+    dlgGroup("Horizontal") {
+      dlgRadioButton("&Top", hor);
+      dlgRadioButton("&Center", hor);
+      dlgRadioButton("&Bottom", hor);
+      }
+      
+    dlgGroup("Vertical") {
+      dlgRadioButton("&Left", ver);
+      dlgRadioButton("C&enter", ver);
+      dlgRadioButton("&Right", ver);
+      }
+    }*/
+ /* dlgHBoxLayout {
+    dlgLabel("File &name:");
+    dlgStringEdit(fileName);
+    dlgPushButton("Bro&wse") {
+      fileName = dlgFileOpen("Select a file", fileName);
+      }
+    }*/
+  dlgGridLayout {
+ /*   dlgCell(0, 0) dlgLabel("Row 0/Col 0");
+    dlgCell(1, 0) dlgLabel("Row 1/Col 0");
+    dlgCell(0, 1) dlgLabel("Row 0/Col 1");
+    dlgCell(1, 1) dlgLabel("Row 1/Col 1");*/
+    dlgCell(0, 0)dlgLabel("X count=");
+    dlgCell(0, 1) dlgIntEdit(x_count, 1, 255);
+    dlgCell(1, 0)dlgLabel("Y count=");
+    dlgCell(1, 1) dlgIntEdit(y_count, 1, 255);   
+    }
+  dlgSpacing(10);
+  dlgHBoxLayout {
+    dlgStretch(1);
+    dlgPushButton("+OK")    dlgAccept();
+    dlgPushButton("Cancel") dlgReject();
+    }
+  }; 
+
+	for (n1=0; n1 < x_count; n1++){
+		for(n2 = 0; n2 < y_count; n2 ++){ 
+		sprintf( s, "VIA (%.4f %.4f);\n", n1 * 2.54, n2 * 2.54);
+		cmd += s;
+		//cmd += ";\n VIA (n1 5);\n";
+		}
+	};	
+
+
+
+if (dlgMessageBox("3ae6eHumb BcE\nk e6eHu Mamepu?", "&Yes", "&No") == 0) {
+   exit (cmd);
+   }
+
+//cmd += ";\n WIRE (5 6) (7 8);\n";
+
+;
