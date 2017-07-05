@@ -9,6 +9,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -1680,6 +1694,123 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
+<library name="microbuilder">
+<description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
+
+&lt;p&gt;Footprints for common components used in our projects and products.  This is the same library that we use internally, and it is regularly updated.  The newest version can always be found at &lt;b&gt;www.microBuilder.eu&lt;/b&gt;.  If you find this library useful, please feel free to purchase something from our online store. Please also note that all holes are optimised for metric drill bits!&lt;/p&gt;
+
+&lt;h3&gt;Obligatory Warning&lt;/h3&gt;
+&lt;p&gt;While it probably goes without saying, there are no guarantees that the footprints or schematic symbols in this library are flawless, and we make no promises of fitness for production, prototyping or any other purpose. These libraries are provided for information puposes only, and are used at your own discretion.  While we make every effort to produce accurate footprints, and many of the items found in this library have be proven in production, we can't make any promises of suitability for a specific purpose. If you do find any errors, though, please feel free to contact us at www.microbuilder.eu to let us know about it so that we can update the library accordingly!&lt;/p&gt;
+
+&lt;h3&gt;License&lt;/h3&gt;
+&lt;p&gt;This work is placed in the public domain, and may be freely used for commercial and non-commercial work with the following conditions:&lt;/p&gt;
+&lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+&lt;/p&gt;</description>
+<packages>
+<package name="LGA16_3X3MM">
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.0508" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.0508" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="-0.9" y1="1.7" x2="-1.7" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="1.7" x2="-1.7" y2="1.35" width="0.2032" layer="21"/>
+<wire x1="-0.9" y1="-1.7" x2="-1.7" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="-1.7" x2="-1.7" y2="-1.35" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="-1.35" x2="1.7" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="-1.7" x2="0.9" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="0.9" y1="1.7" x2="1.7" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="1.7" x2="1.7" y2="1.35" width="0.2032" layer="21"/>
+<smd name="1" x="-1.45" y="1" dx="0.8" dy="0.25" layer="1"/>
+<smd name="2" x="-1.45" y="0.5" dx="0.8" dy="0.25" layer="1"/>
+<smd name="3" x="-1.45" y="0" dx="0.8" dy="0.25" layer="1"/>
+<smd name="4" x="-1.45" y="-0.5" dx="0.8" dy="0.25" layer="1"/>
+<smd name="5" x="-1.45" y="-1" dx="0.8" dy="0.25" layer="1"/>
+<smd name="6" x="-0.5" y="-1.45" dx="0.8" dy="0.25" layer="1" rot="R90"/>
+<smd name="7" x="0" y="-1.45" dx="0.8" dy="0.25" layer="1" rot="R90"/>
+<smd name="8" x="0.5" y="-1.45" dx="0.8" dy="0.25" layer="1" rot="R90"/>
+<smd name="9" x="1.45" y="-1" dx="0.8" dy="0.25" layer="1" rot="R180"/>
+<smd name="10" x="1.45" y="-0.5" dx="0.8" dy="0.25" layer="1" rot="R180"/>
+<smd name="11" x="1.45" y="0" dx="0.8" dy="0.25" layer="1" rot="R180"/>
+<smd name="12" x="1.45" y="0.5" dx="0.8" dy="0.25" layer="1" rot="R180"/>
+<smd name="13" x="1.45" y="1" dx="0.8" dy="0.25" layer="1" rot="R180"/>
+<smd name="14" x="0.5" y="1.45" dx="0.8" dy="0.25" layer="1" rot="R270"/>
+<smd name="15" x="0" y="1.45" dx="0.8" dy="0.25" layer="1" rot="R270"/>
+<smd name="16" x="-0.5" y="1.45" dx="0.8" dy="0.25" layer="1" rot="R270"/>
+<text x="-1.7" y="2.1" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.7" y="-2.4" size="0.4064" layer="27" ratio="12">&gt;VALUE</text>
+<circle x="-2.25" y="1.55" radius="0.1" width="0.4064" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LIS3DHTR">
+<pin name="VDDIO" x="-15.24" y="7.62" length="short" direction="sup"/>
+<pin name="NC@1" x="-15.24" y="5.08" length="short" direction="nc"/>
+<pin name="NC@2" x="-15.24" y="2.54" length="short" direction="nc"/>
+<pin name="SCL_SPC" x="-15.24" y="0" length="short"/>
+<pin name="GND@1" x="-15.24" y="-2.54" length="short" direction="sup"/>
+<pin name="SDA_SDI_SDO" x="-15.24" y="-5.08" length="short"/>
+<pin name="SDO_SA0" x="-15.24" y="-7.62" length="short"/>
+<pin name="CS" x="-15.24" y="-10.16" length="short" direction="in"/>
+<pin name="INT2" x="15.24" y="-5.08" length="short" direction="out" rot="R180"/>
+<pin name="RES(GND)" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="INT1" x="15.24" y="0" length="short" direction="out" rot="R180"/>
+<pin name="GND@2" x="15.24" y="2.54" length="short" direction="sup" rot="R180"/>
+<pin name="ADC3" x="15.24" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="VDD" x="2.54" y="15.24" length="short" direction="sup" rot="R270"/>
+<pin name="ADC2" x="0" y="15.24" length="short" direction="in" rot="R270"/>
+<pin name="ADC1" x="-2.54" y="15.24" length="short" direction="in" rot="R270"/>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<text x="-12.7" y="15.24" size="1.27" layer="95">&gt;NAME</text>
+<text x="5.08" y="-15.24" size="1.27" layer="95">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ACCEL_LIS3DHTR" prefix="U" uservalue="yes">
+<description>&lt;b&gt;LIS3DHTR 3-Axis Accelerometer with I2C/SPI Interface&lt;/b&gt;
+
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;VDD&lt;/b&gt;: 1.71-3.6V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;VDDIO&lt;/b&gt;: 1.71-VDD+0.1V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Scale&lt;/b&gt;: +/-2g, 4g, 8g, 16g with 16--bit data output&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Temp:&lt;/b&gt;: -40°C - 85°C&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt;Mouser: 511-LIS3DHTR&lt;br/&gt;Digikey: 497-10613-1-ND&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LIS3DHTR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA16_3X3MM">
+<connects>
+<connect gate="G$1" pin="ADC1" pad="16"/>
+<connect gate="G$1" pin="ADC2" pad="15"/>
+<connect gate="G$1" pin="ADC3" pad="13"/>
+<connect gate="G$1" pin="CS" pad="8"/>
+<connect gate="G$1" pin="GND@1" pad="5"/>
+<connect gate="G$1" pin="GND@2" pad="12"/>
+<connect gate="G$1" pin="INT1" pad="11"/>
+<connect gate="G$1" pin="INT2" pad="9"/>
+<connect gate="G$1" pin="NC@1" pad="2"/>
+<connect gate="G$1" pin="NC@2" pad="3"/>
+<connect gate="G$1" pin="RES(GND)" pad="10"/>
+<connect gate="G$1" pin="SCL_SPC" pad="4"/>
+<connect gate="G$1" pin="SDA_SDI_SDO" pad="6"/>
+<connect gate="G$1" pin="SDO_SA0" pad="7"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+<connect gate="G$1" pin="VDDIO" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1765,6 +1896,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="J2" library="Nordic_misc" deviceset="HEADER_16X1" device=""/>
 <part name="J3" library="Nordic_misc" deviceset="HEADER_16X1" device=""/>
+<part name="U3" library="microbuilder" deviceset="ACCEL_LIS3DHTR" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="VDD_NRF7" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
+<part name="C6" library="Nordic_misc" deviceset="CAPACITOR" device="_0603_N" value="4.7µF"/>
+<part name="VDD_NRF8" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1807,6 +1945,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="GND15" gate="1" x="193.04" y="35.56"/>
 <instance part="C11" gate="C$1" x="27.94" y="114.3" rot="R90"/>
 <instance part="C12" gate="C$1" x="27.94" y="96.52" rot="R90"/>
+<instance part="U3" gate="G$1" x="43.18" y="45.72"/>
+<instance part="GND8" gate="1" x="10.16" y="38.1" rot="MR0"/>
+<instance part="VDD_NRF7" gate="G$1" x="10.16" y="55.88"/>
+<instance part="C6" gate="C$1" x="10.16" y="48.26"/>
+<instance part="VDD_NRF8" gate="G$1" x="45.72" y="68.58"/>
+<instance part="GND11" gate="1" x="63.5" y="53.34" rot="MR180"/>
+<instance part="GND12" gate="1" x="22.86" y="58.42" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -1895,6 +2040,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="190.5" y1="45.72" x2="193.04" y2="45.72" width="0.1524" layer="91"/>
 <junction x="193.04" y="45.72"/>
 </segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="10.16" y1="40.64" x2="10.16" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C6" gate="C$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="22.86" y1="55.88" x2="22.86" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GND@1"/>
+<wire x1="22.86" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VDD_P3V3" class="0">
 <segment>
@@ -1931,6 +2087,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="VDD_NRF3" gate="G$1" pin="VCC"/>
 <wire x1="190.5" y1="50.8" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="50.8" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="10.16" y1="53.34" x2="10.16" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="VDD_NRF7" gate="G$1" pin="VCC"/>
+<wire x1="27.94" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
+<junction x="10.16" y="53.34"/>
+<pinref part="C6" gate="C$1" pin="1"/>
+<pinref part="U3" gate="G$1" pin="VDDIO"/>
 </segment>
 </net>
 <net name="DEC1" class="0">
@@ -2275,6 +2439,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="157.48" y1="76.2" x2="157.48" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="50.8" x2="170.18" y2="50.8" width="0.1524" layer="91"/>
 <label x="160.02" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="VDD_NRF8" gate="G$1" pin="VCC"/>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<wire x1="45.72" y1="66.04" x2="45.72" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND@2" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="GND@2"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="58.42" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="48.26" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
