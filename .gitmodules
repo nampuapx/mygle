@@ -1,3 +1,6 @@
 [submodule "!my_lib/el"]
 	path = !my_lib/el
 	url = https://github.com/jeremysf/Eagle-Libraries.git
+[submodule "!my_lib/eagle_rep01"]
+	path = !my_lib/eagle_rep01
+	url = https://github.com/nampuapx/eagle.git
