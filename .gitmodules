@@ -4,3 +4,9 @@
 [submodule "!my_lib/eagle_rep01"]
 	path = !my_lib/eagle_rep01
 	url = https://github.com/nampuapx/eagle.git
+[submodule "!my_lib/eagle_rep02"]
+	path = !my_lib/eagle_rep02
+	url = https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries.git
+[submodule "!my_lib/eagle_rep03"]
+	path = !my_lib/eagle_rep03
+	url = https://github.com/chiengineer/Eagle-Libraries.git
