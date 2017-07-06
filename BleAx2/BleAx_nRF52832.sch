@@ -4511,11 +4511,6 @@ Created 2016-06-07, Hans Locher&lt;br&gt;
 <wire x1="246.38" y1="167.64" x2="99.06" y2="167.64" width="0.3048" layer="94"/>
 <wire x1="99.06" y1="167.64" x2="99.06" y2="76.2" width="0.3048" layer="94"/>
 <wire x1="99.06" y1="76.2" x2="246.38" y2="76.2" width="0.3048" layer="94"/>
-<wire x1="91.44" y1="76.2" x2="17.78" y2="76.2" width="0.3048" layer="94"/>
-<wire x1="17.78" y1="76.2" x2="17.78" y2="160.02" width="0.3048" layer="94"/>
-<wire x1="17.78" y1="160.02" x2="91.44" y2="160.02" width="0.3048" layer="94"/>
-<wire x1="91.44" y1="160.02" x2="91.44" y2="76.2" width="0.3048" layer="94"/>
-<text x="17.78" y="160.02" size="5.08" layer="94">Header connections</text>
 <text x="101.6" y="160.02" size="5.08" layer="94">LEDs and buttons</text>
 </plain>
 <instances>
