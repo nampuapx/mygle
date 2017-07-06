@@ -10,3 +10,6 @@
 [submodule "!my_lib/eagle_rep03"]
 	path = !my_lib/eagle_rep03
 	url = https://github.com/chiengineer/Eagle-Libraries.git
+[submodule "!my_lib/eagle_rep04"]
+	path = !my_lib/eagle_rep04
+	url = https://github.com/snakeye/eagle-lib.git
