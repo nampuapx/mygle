@@ -1933,6 +1933,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <library name="sst26">
 <packages>
 <package name="SOIJ8">
+<description>sst26</description>
 <smd name="P$1" x="-1.97" y="-3.73" dx="1" dy="0.45" layer="1" rot="R90"/>
 <smd name="P$2" x="-0.7" y="-3.73" dx="1" dy="0.45" layer="1" rot="R90"/>
 <smd name="P$3" x="0.57" y="-3.73" dx="1" dy="0.45" layer="1" rot="R90"/>
@@ -1951,6 +1952,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-1.57" y1="-3.19" x2="-1.57" y2="-4.19" width="0.127" layer="21"/>
 <text x="-2.71" y="4.12" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.75" y="-5.72" size="1.27" layer="25">&gt;VALUE</text>
+<wire x1="-2.6" y1="-4.2" x2="2.5" y2="-4.2" width="0.127" layer="39"/>
+<wire x1="2.5" y1="-4.2" x2="2.5" y2="3.8" width="0.127" layer="39"/>
+<wire x1="2.5" y1="3.8" x2="-2.6" y2="3.8" width="0.127" layer="39"/>
+<wire x1="-2.6" y1="3.8" x2="-2.6" y2="-4.2" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
