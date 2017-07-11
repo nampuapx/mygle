@@ -2784,9 +2784,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="20.32" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="88.9" y1="78.74" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.08@10"/>
-<label x="66.04" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="88.9" y1="81.28" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.07@09"/>
+<label x="63.5" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCK_01" class="0">
@@ -2798,9 +2798,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="20.32" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.10/NFC2@12"/>
-<label x="66.04" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="63.5" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.09/NFC1@11"/>
+<label x="63.5" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI_01" class="0">
@@ -2812,9 +2812,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="20.32" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.09/NFC1@11"/>
-<label x="66.04" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="63.5" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.08@10"/>
+<label x="63.5" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LIS_CS" class="0">
@@ -2826,9 +2826,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="20.32" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="88.9" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.07@09"/>
-<label x="66.04" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="88.9" y1="83.82" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.06@08"/>
+<label x="63.5" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LIS_INT1" class="0">
@@ -2838,9 +2838,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="71.12" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.06@08"/>
-<label x="66.04" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="63.5" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.05/AIN3@07"/>
+<label x="63.5" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SST26_CE" class="0">
@@ -2893,14 +2893,14 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 </net>
 <net name="BTTN_01" class="0">
 <segment>
-<pinref part="U1" gate="U$1" pin="P0.31@43"/>
-<wire x1="119.38" y1="119.38" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
-<label x="119.38" y="124.46" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R8" gate="R$1" pin="1"/>
 <wire x1="200.66" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
 <label x="200.66" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="81.28" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.10/NFC2@12"/>
+<label x="81.28" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LED_01" class="0">
