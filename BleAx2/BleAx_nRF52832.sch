@@ -2288,7 +2288,7 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <part name="C11" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
 <part name="C12" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="D3" library="Nordic_misc" deviceset="LED" device=""/>
+<part name="D3" library="Nordic_misc" deviceset="LED" device="" value="LED_CHARGE"/>
 <part name="R11" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="1k"/>
 <part name="U$3" library="microbuilder" deviceset="ACCEL_LIS3DHTR" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
@@ -2309,9 +2309,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <part name="VDD_NRF5" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="VDD_NRF10" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
-<part name="D1" library="Nordic_misc" deviceset="LED" device=""/>
+<part name="D1" library="Nordic_misc" deviceset="LED" device="" value="LED_BLUE"/>
 <part name="R2" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="1k"/>
-<part name="D4" library="Nordic_misc" deviceset="LED" device=""/>
+<part name="D4" library="Nordic_misc" deviceset="LED" device="" value="LED_GREEN"/>
 <part name="R3" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="1k"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="con-molex-usb" deviceset="MICRO-USB-RECEPTACLE" device="47589-0001"/>
