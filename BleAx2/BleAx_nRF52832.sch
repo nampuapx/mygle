@@ -2282,11 +2282,10 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="C11" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
 <part name="C12" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
-<part name="VDD_NRF6" library="supply2" deviceset="VCC" device="" value="VDD_P5V0_USB"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="D3" library="Nordic_misc" deviceset="LED" device=""/>
 <part name="R11" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="1k"/>
-<part name="U3" library="microbuilder" deviceset="ACCEL_LIS3DHTR" device=""/>
+<part name="U$3" library="microbuilder" deviceset="ACCEL_LIS3DHTR" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="VDD_NRF7" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="C6" library="Nordic_misc" deviceset="CAPACITOR" device="_0603_N" value="4.7µF"/>
@@ -2299,7 +2298,6 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <part name="U2" library="Seeed-OPL-ic" deviceset="PMIC-MCP73832T-2ACI/OT(SOT23-5)" device="" value="MCP73832T-2ACI/OT-SOT23-5"/>
 <part name="R1" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="3K"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="VDD_NRF9" library="supply2" deviceset="VCC" device="" value="VDD_P5V0_USB"/>
 <part name="J1" library="Seeed-OPL-Connector" deviceset="CONN-HEADER-PH-SIDE-(2P-2.0MM)" device="'90D'" value="2.0MM-90D"/>
 <part name="VDD_BATT1" library="supply2" deviceset="VCC" device="" value="VDD_BATT"/>
 <part name="U$2" library="sst26" deviceset="SST26VF" device=""/>
@@ -2364,7 +2362,7 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <instance part="GND15" gate="1" x="160.02" y="68.58" rot="R180"/>
 <instance part="C11" gate="C$1" x="27.94" y="114.3" rot="R90"/>
 <instance part="C12" gate="C$1" x="27.94" y="96.52" rot="R90"/>
-<instance part="U3" gate="G$1" x="48.26" y="38.1"/>
+<instance part="U$3" gate="G$1" x="48.26" y="38.1"/>
 <instance part="GND8" gate="1" x="12.7" y="40.64" rot="MR0"/>
 <instance part="VDD_NRF7" gate="G$1" x="12.7" y="60.96"/>
 <instance part="C6" gate="C$1" x="12.7" y="50.8"/>
@@ -2474,7 +2472,7 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="27.94" y1="48.26" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="GND@1"/>
+<pinref part="U$3" gate="G$1" pin="GND@1"/>
 <wire x1="27.94" y1="35.56" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -2495,10 +2493,10 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <wire x1="101.6" y1="12.7" x2="101.6" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND@2"/>
+<pinref part="U$3" gate="G$1" pin="GND@2"/>
 <wire x1="63.5" y1="40.64" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="40.64" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="RES(GND)"/>
+<pinref part="U$3" gate="G$1" pin="RES(GND)"/>
 <wire x1="63.5" y1="35.56" x2="68.58" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="35.56" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
 <junction x="68.58" y="40.64"/>
@@ -2568,7 +2566,7 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <wire x1="17.78" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="58.42" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="C13" gate="C$1" pin="1"/>
-<pinref part="U3" gate="G$1" pin="VDDIO"/>
+<pinref part="U$3" gate="G$1" pin="VDDIO"/>
 <wire x1="33.02" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="45.72" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="58.42" x2="17.78" y2="58.42" width="0.1524" layer="91"/>
@@ -2598,7 +2596,7 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 </segment>
 <segment>
 <pinref part="VDD_NRF8" gate="G$1" pin="VCC"/>
-<pinref part="U3" gate="G$1" pin="VDD"/>
+<pinref part="U$3" gate="G$1" pin="VDD"/>
 <wire x1="50.8" y1="58.42" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -2774,70 +2772,70 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 </net>
 <net name="MISO_01" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="SDO_SA0"/>
+<pinref part="U$3" gate="G$1" pin="SDO_SA0"/>
 <wire x1="33.02" y1="30.48" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="30.48" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="22.86" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
 <label x="20.32" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="88.9" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.06@08"/>
-<label x="66.04" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="88.9" y1="78.74" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.08@10"/>
+<label x="66.04" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCK_01" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="SCL_SPC"/>
+<pinref part="U$3" gate="G$1" pin="SCL_SPC"/>
 <wire x1="33.02" y1="38.1" x2="22.86" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="38.1" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="27.94" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
 <label x="20.32" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.08@10"/>
-<label x="66.04" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="66.04" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.10/NFC2@12"/>
+<label x="66.04" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI_01" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="SDA_SDI_SDO"/>
+<pinref part="U$3" gate="G$1" pin="SDA_SDI_SDO"/>
 <wire x1="33.02" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="33.02" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
 <label x="20.32" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="68.58" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="U$1" pin="P0.07@09"/>
-<wire x1="68.58" y1="81.28" x2="88.9" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="76.2" x2="88.9" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.09/NFC1@11"/>
+<label x="66.04" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LIS_CS" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="CS"/>
+<pinref part="U$3" gate="G$1" pin="CS"/>
 <wire x1="33.02" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="27.94" x2="30.48" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 <label x="20.32" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="88.9" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.04/AIN2@06"/>
-<label x="66.04" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="88.9" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.07@09"/>
+<label x="66.04" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LIS_INT1" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="INT1"/>
+<pinref part="U$3" gate="G$1" pin="INT1"/>
 <wire x1="63.5" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
 <label x="71.12" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.03/AIN1@05"/>
-<label x="66.04" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="66.04" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.06@08"/>
+<label x="66.04" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SST26_CE" class="0">
@@ -2849,6 +2847,7 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <segment>
 <pinref part="U1" gate="U$1" pin="P0.11@14"/>
 <wire x1="109.22" y1="43.18" x2="109.22" y2="55.88" width="0.1524" layer="91"/>
+<label x="109.22" y="43.18" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="MISO_02" class="0">
@@ -2860,6 +2859,7 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <segment>
 <pinref part="U1" gate="U$1" pin="P0.12@15"/>
 <wire x1="111.76" y1="43.18" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
+<label x="111.76" y="43.18" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="SCK_02" class="0">
@@ -2978,15 +2978,13 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <instance part="GND18" gate="1" x="157.48" y="38.1" rot="MR0"/>
 <instance part="GND19" gate="1" x="203.2" y="38.1" rot="MR0"/>
 <instance part="GND20" gate="1" x="210.82" y="38.1" rot="MR0"/>
-<instance part="VDD_NRF6" gate="G$1" x="45.72" y="53.34"/>
-<instance part="GND22" gate="1" x="45.72" y="33.02" rot="MR0"/>
+<instance part="GND22" gate="1" x="40.64" y="27.94" rot="MR0"/>
 <instance part="D3" gate="D$1" x="76.2" y="27.94"/>
 <instance part="R11" gate="R$1" x="86.36" y="27.94" rot="R180"/>
 <instance part="U4" gate="G$1" x="187.96" y="50.8"/>
 <instance part="U2" gate="G$1" x="76.2" y="43.18" rot="R180"/>
 <instance part="R1" gate="R$1" x="53.34" y="38.1" rot="R180"/>
 <instance part="GND14" gate="1" x="106.68" y="38.1" rot="MR0"/>
-<instance part="VDD_NRF9" gate="G$1" x="63.5" y="27.94" rot="R90"/>
 <instance part="J1" gate="G$1" x="111.76" y="46.99"/>
 <instance part="VDD_BATT1" gate="G$1" x="99.06" y="53.34"/>
 <instance part="U$1" gate="G$1" x="33.02" y="43.18" rot="MR0"/>
@@ -3023,12 +3021,12 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 </segment>
 <segment>
 <pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="45.72" y1="38.1" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="38.1" x2="40.64" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="R1" gate="R$1" pin="2"/>
-<wire x1="48.26" y1="38.1" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
-<junction x="45.72" y="38.1"/>
+<wire x1="48.26" y1="38.1" x2="40.64" y2="38.1" width="0.1524" layer="91"/>
+<junction x="40.64" y="38.1"/>
 <pinref part="U$1" gate="G$1" pin="5"/>
-<wire x1="45.72" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VSS"/>
@@ -3072,18 +3070,14 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 </net>
 <net name="VCC_P5V0_USB" class="0">
 <segment>
-<pinref part="VDD_NRF6" gate="G$1" pin="VCC"/>
-<wire x1="45.72" y1="48.26" x2="45.72" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VDD"/>
-<wire x1="45.72" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
-<junction x="45.72" y="48.26"/>
-<pinref part="U$1" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="48.26" x2="38.1" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="D3" gate="D$1" pin="A"/>
-<wire x1="66.04" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="VDD_NRF9" gate="G$1" pin="VCC"/>
+<pinref part="U2" gate="G$1" pin="VDD"/>
+<wire x1="38.1" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="27.94" x2="45.72" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="27.94" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
+<junction x="45.72" y="48.26"/>
 </segment>
 </net>
 <net name="VDD_P3V3" class="0">
