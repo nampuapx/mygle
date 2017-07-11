@@ -2284,17 +2284,11 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <part name="VDD_NRF6" library="supply2" deviceset="VCC" device="" value="VDD_P5V0_USB"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="BTN1" library="Nordic_misc" deviceset="PANASONIC_EVQPT5A15" device=""/>
-<part name="BTN2" library="Nordic_misc" deviceset="PANASONIC_EVQPT5A15" device=""/>
 <part name="R7" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="100k"/>
-<part name="R8" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="100k"/>
-<part name="VDD_NRF11" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="VDD_NRF12" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
-<part name="R6" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="330R"/>
 <part name="D3" library="Nordic_misc" deviceset="LED" device=""/>
 <part name="R11" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="1k"/>
 <part name="U3" library="microbuilder" deviceset="ACCEL_LIS3DHTR" device=""/>
@@ -2326,6 +2320,8 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="U$1" library="con-molex-usb" deviceset="MICRO-USB-RECEPTACLE" device="47589-0001"/>
 <part name="X1" library="crystals" deviceset="FA-128" device=""/>
+<part name="R4" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="100k"/>
+<part name="VDD_NRF11" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 </parts>
 <sheets>
 <sheet>
@@ -2388,6 +2384,8 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <instance part="VDD_NRF15" gate="G$1" x="27.94" y="165.1"/>
 <instance part="GND11" gate="1" x="68.58" y="50.8" rot="MR180"/>
 <instance part="X1" gate="G$1" x="182.88" y="119.38" rot="R90"/>
+<instance part="R4" gate="R$1" x="144.78" y="40.64" rot="R180"/>
+<instance part="VDD_NRF11" gate="G$1" x="182.88" y="40.64" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -2669,6 +2667,10 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="154.94" y="43.18" size="1.778" layer="95"/>
 <wire x1="170.18" y1="43.18" x2="134.62" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="CN1" gate="G$1" pin="6"/>
+<wire x1="134.62" y1="43.18" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R4" gate="R$1" pin="2"/>
+<wire x1="134.62" y1="40.64" x2="139.7" y2="40.64" width="0.1524" layer="91"/>
+<junction x="134.62" y="43.18"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2748,9 +2750,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="20.32" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="68.58" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="U$1" pin="P0.08@10"/>
-<wire x1="88.9" y1="78.74" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.06@08"/>
+<label x="66.04" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCK_01" class="0">
@@ -2762,9 +2764,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="20.32" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="68.58" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="U$1" pin="P0.06@08"/>
-<wire x1="68.58" y1="83.82" x2="88.9" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.08@10"/>
+<label x="66.04" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI_01" class="0">
@@ -2790,9 +2792,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="20.32" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="68.58" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U1" gate="U$1" pin="P0.09/NFC1@11"/>
-<wire x1="88.9" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.04/AIN2@06"/>
+<label x="66.04" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LIS_INT1" class="0">
@@ -2802,9 +2804,9 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="71.12" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="68.58" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="68.58" y1="73.66" x2="88.9" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="P0.10/NFC2@12"/>
+<wire x1="66.04" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U$1" pin="P0.03/AIN1@05"/>
+<label x="66.04" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SST26_CE" class="0">
@@ -2898,6 +2900,13 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <label x="27.94" y="137.16" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="R4" gate="R$1" pin="1"/>
+<pinref part="VDD_NRF11" gate="G$1" pin="VCC"/>
+<wire x1="149.86" y1="40.64" x2="180.34" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -2934,17 +2943,11 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <instance part="VDD_NRF6" gate="G$1" x="45.72" y="53.34"/>
 <instance part="GND22" gate="1" x="45.72" y="33.02" rot="MR0"/>
 <instance part="BTN1" gate="G$1" x="220.98" y="127"/>
-<instance part="BTN2" gate="G$1" x="220.98" y="88.9"/>
 <instance part="R7" gate="R$1" x="210.82" y="144.78" rot="R90"/>
-<instance part="R8" gate="R$1" x="210.82" y="106.68" rot="R90"/>
-<instance part="VDD_NRF11" gate="G$1" x="210.82" y="116.84"/>
 <instance part="VDD_NRF12" gate="G$1" x="210.82" y="154.94"/>
 <instance part="GND25" gate="1" x="228.6" y="119.38" rot="MR0"/>
 <instance part="GND26" gate="1" x="241.3" y="119.38" rot="MR0"/>
-<instance part="GND27" gate="1" x="228.6" y="81.28" rot="MR0"/>
-<instance part="GND28" gate="1" x="241.3" y="81.28" rot="MR0"/>
 <instance part="R5" gate="R$1" x="200.66" y="137.16"/>
-<instance part="R6" gate="R$1" x="200.66" y="99.06"/>
 <instance part="D3" gate="D$1" x="76.2" y="27.94"/>
 <instance part="R11" gate="R$1" x="86.36" y="27.94" rot="R180"/>
 <instance part="U4" gate="G$1" x="187.96" y="50.8"/>
@@ -2964,13 +2967,6 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <pinref part="R5" gate="R$1" pin="1"/>
 <wire x1="190.5" y1="137.16" x2="195.58" y2="137.16" width="0.1524" layer="91"/>
 <label x="190.5" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="P0.21/RESET" class="0">
-<segment>
-<pinref part="R6" gate="R$1" pin="1"/>
-<wire x1="195.58" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
-<label x="187.96" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3022,20 +3018,6 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <wire x1="238.76" y1="129.54" x2="241.3" y2="129.54" width="0.1524" layer="91"/>
 <junction x="241.3" y="129.54"/>
 <pinref part="GND26" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="BTN2" gate="G$1" pin="GND"/>
-<pinref part="GND27" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="BTN2" gate="G$1" pin="B"/>
-<wire x1="238.76" y1="99.06" x2="241.3" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="99.06" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="BTN2" gate="G$1" pin="B'"/>
-<wire x1="241.3" y1="91.44" x2="241.3" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="91.44" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
-<junction x="241.3" y="91.44"/>
-<pinref part="GND28" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VSS"/>
@@ -3093,17 +3075,6 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <pinref part="VDD_NRF9" gate="G$1" pin="VCC"/>
 </segment>
 </net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R8" gate="R$1" pin="1"/>
-<pinref part="BTN2" gate="G$1" pin="A"/>
-<wire x1="210.82" y1="99.06" x2="210.82" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="99.06" x2="210.82" y2="99.06" width="0.1524" layer="91"/>
-<junction x="210.82" y="99.06"/>
-<pinref part="R6" gate="R$1" pin="2"/>
-<wire x1="210.82" y1="99.06" x2="205.74" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="BTN1" gate="G$1" pin="A'"/>
@@ -3123,11 +3094,6 @@ ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;&lt;br&gt;
 <pinref part="R7" gate="R$1" pin="2"/>
 <pinref part="VDD_NRF12" gate="G$1" pin="VCC"/>
 <wire x1="210.82" y1="152.4" x2="210.82" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R8" gate="R$1" pin="2"/>
-<pinref part="VDD_NRF11" gate="G$1" pin="VCC"/>
-<wire x1="210.82" y1="114.3" x2="210.82" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="VDD_NRF4" gate="G$1" pin="VCC"/>
