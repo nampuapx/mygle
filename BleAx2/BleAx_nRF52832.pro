@@ -2,14 +2,14 @@ EAGLE AutoRouter Statistics:
 
 Job           : D:/mydo/eagle/BleAx2/BleAx_nRF52832.brd
 
-Start at      : 20:27:30 (11.07.2017)
-End at        : 20:27:31 (11.07.2017)
+Start at      : 18:06:23 (13.07.2017)
+End at        : 18:06:25 (13.07.2017)
 Elapsed time  : 00:00:00
 
-Signals       :    37   RoutingGrid: 19.685 mil  Layers: 2
-Connections   :   120   predefined:  120 ( 50 Vias )
+Signals       :    39   RoutingGrid: 19.685 mil  Layers: 2
+Connections   :   122   predefined:  122 ( 47 Vias )
 
-Router memory :   36000
+Router memory :   29216
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
