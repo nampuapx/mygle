@@ -16,3 +16,6 @@
 [submodule "!my_lib/eagle_rep05"]
 	path = !my_lib/eagle_rep05
 	url = https://github.com/lab11/eagle.git
+[submodule "!my_lib/SparkFun"]
+	path = !my_lib/SparkFun
+	url = https://github.com/sparkfun/SparkFun-Eagle-Libraries.git
