@@ -2960,14 +2960,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C12" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="12pF"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="D3" library="Nordic_misc" deviceset="LED" device="" value="LED_CHARGE"/>
-<part name="R11" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="1k"/>
+<part name="R11" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="10k"/>
 <part name="U$3" library="microbuilder" deviceset="ACCEL_LIS3DHTR" device="" value="LIS3DH"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="VDD_NRF7" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="C6" library="Nordic_misc" deviceset="CAPACITOR" device="_0603_N" value="4.7µF"/>
 <part name="VDD_NRF8" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="CN1" library="Seeed-OPL-Connector" deviceset="DIP-BLACK-FEMALE-HEADER-VERT(6P-2.54)" device="" value="6p-2.54"/>
+<part name="NN_CN1" library="Seeed-OPL-Connector" deviceset="DIP-BLACK-FEMALE-HEADER-VERT(6P-2.54)" device="" value="6p-2.54"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="C13" library="Nordic_misc" deviceset="CAPACITOR" device="_0402_N" value="100nF"/>
 <part name="U4" library="microbuilder" deviceset="VREG_SOT23-5" device="" value="MIC5225-3.3"/>
@@ -2981,15 +2981,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="VDD_NRF10" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="D1" library="Nordic_misc" deviceset="LED" device="" value="LED_BLUE"/>
-<part name="R2" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="1k"/>
+<part name="R2" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="10k"/>
 <part name="D4" library="Nordic_misc" deviceset="LED" device="" value="LED_GREEN"/>
-<part name="R3" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="1k"/>
+<part name="R3" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="10k"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="X1" library="crystals" deviceset="FA-128" device=""/>
 <part name="R4" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="100k"/>
 <part name="VDD_NRF11" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="BTN2" library="Nordic_misc" deviceset="PANASONIC_EVQPT5A15" device=""/>
-<part name="R6" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="100k"/>
+<part name="R6" library="Nordic_misc" deviceset="RESISTOR" device="_0402_N" value="10k"/>
 <part name="VDD_NRF14" library="supply2" deviceset="VCC" device="" value="VDD_P3V3"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
@@ -2997,8 +2997,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="con-molex-usb_my" deviceset="MICRO-USB-RECEPTACLE_MY" device=""/>
-<part name="TP1" library="testpad" deviceset="TPSQ" device="TP08R"/>
-<part name="TP2" library="testpad" deviceset="TPSQ" device="TP08R"/>
+<part name="NN_TP1" library="testpad" deviceset="TPSQ" device="TP08R"/>
+<part name="NN_TP2" library="testpad" deviceset="TPSQ" device="TP08R"/>
 </parts>
 <sheets>
 <sheet>
@@ -3046,7 +3046,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="C6" gate="C$1" x="12.7" y="50.8"/>
 <instance part="VDD_NRF8" gate="G$1" x="50.8" y="60.96"/>
 <instance part="GND12" gate="1" x="27.94" y="50.8" rot="MR180"/>
-<instance part="CN1" gate="G$1" x="177.8" y="46.99"/>
+<instance part="NN_CN1" gate="G$1" x="177.8" y="46.99"/>
 <instance part="GND13" gate="1" x="17.78" y="33.02" rot="MR0"/>
 <instance part="C13" gate="C$1" x="17.78" y="43.18"/>
 <instance part="U$2" gate="G$1" x="111.76" y="12.7"/>
@@ -3069,8 +3069,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="R8" gate="R$1" x="215.9" y="48.26"/>
 <instance part="GND25" gate="1" x="20.32" y="111.76" rot="MR180"/>
 <instance part="GND26" gate="1" x="33.02" y="111.76" rot="MR180"/>
-<instance part="TP1" gate="G$1" x="129.54" y="48.26"/>
-<instance part="TP2" gate="G$1" x="132.08" y="50.8"/>
+<instance part="NN_TP1" gate="G$1" x="129.54" y="48.26"/>
+<instance part="NN_TP2" gate="G$1" x="132.08" y="50.8"/>
 <instance part="GND22" gate="1" x="185.42" y="132.08" rot="MR0"/>
 <instance part="D3" gate="D$1" x="218.44" y="134.62"/>
 <instance part="R11" gate="R$1" x="228.6" y="134.62" rot="R180"/>
@@ -3180,7 +3180,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="160.02" y1="66.04" x2="160.02" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="50.8" x2="170.18" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="2"/>
+<pinref part="NN_CN1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -3332,7 +3332,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="VDD_NRF3" gate="G$1" pin="VCC"/>
 <wire x1="167.64" y1="68.58" x2="167.64" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="1"/>
+<pinref part="NN_CN1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="VDD_NRF10" gate="G$1" pin="VCC"/>
@@ -3431,7 +3431,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="127" y1="55.88" x2="127" y2="43.18" width="0.1524" layer="91"/>
 <label x="154.94" y="43.18" size="1.778" layer="95"/>
 <wire x1="170.18" y1="43.18" x2="127" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="5"/>
+<pinref part="NN_CN1" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="P0.21/RESET" class="0">
@@ -3440,7 +3440,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="134.62" y1="55.88" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
 <label x="154.94" y="40.64" size="1.778" layer="95"/>
 <wire x1="170.18" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="G$1" pin="6"/>
+<pinref part="NN_CN1" gate="G$1" pin="6"/>
 <wire x1="134.62" y1="40.64" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R4" gate="R$1" pin="2"/>
 <wire x1="134.62" y1="38.1" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
@@ -3500,7 +3500,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="154.94" y1="73.66" x2="154.94" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="45.72" x2="170.18" y2="45.72" width="0.1524" layer="91"/>
 <label x="160.02" y="45.72" size="1.778" layer="95"/>
-<pinref part="CN1" gate="G$1" pin="4"/>
+<pinref part="NN_CN1" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -3510,7 +3510,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="157.48" y1="76.2" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="48.26" x2="170.18" y2="48.26" width="0.1524" layer="91"/>
 <label x="160.02" y="48.26" size="1.778" layer="95"/>
-<pinref part="CN1" gate="G$1" pin="3"/>
+<pinref part="NN_CN1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="MISO_01" class="0">
@@ -3696,7 +3696,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$11" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="P0.19@22"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
+<pinref part="NN_TP1" gate="G$1" pin="TP"/>
 <wire x1="129.54" y1="50.8" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -3704,7 +3704,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="U1" gate="U$1" pin="P0.20@23"/>
 <wire x1="132.08" y1="53.34" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="NN_TP2" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="VDD_BATT" class="0">
