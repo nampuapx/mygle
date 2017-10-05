@@ -3963,7 +3963,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="X11" library="con-molex" deviceset="KK-156-3" device=""/>
-<part name="X12" library="con-molex" deviceset="KK-156-2" device=""/>
+<part name="X12" library="con-molex" deviceset="KK-156-2" device="" value="LED_01"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="M1206" value="3k3"/>
 <part name="P+11" library="supply1" deviceset="VCC" device="" value="VCC_5V"/>
 <part name="X13" library="con-molex" deviceset="KK-156-2" device=""/>

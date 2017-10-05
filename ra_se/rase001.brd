@@ -827,7 +827,7 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="3.81" y="-90.17" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="3.81" y="-90.17" size="1.778" layer="27" display="off"/>
 </element>
-<element name="X12" library="con-molex" package="KK-156-2" value="" x="1.27" y="-100.33">
+<element name="X12" library="con-molex" package="KK-156-2" value="LED_01" x="1.27" y="-100.33">
 <attribute name="OC_NEWARK" value="unknown" x="1.27" y="-100.33" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="1.27" y="-100.33" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="1.27" y="-100.33" size="1.778" layer="27" display="off"/>
