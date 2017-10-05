@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="8.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -236,11 +236,26 @@ MAX RS485</description>
 <pin name="PB13" x="27.94" y="-22.86" length="middle" rot="R180"/>
 <pin name="PB12" x="27.94" y="-25.4" length="middle" rot="R180"/>
 <wire x1="-20.32" y1="25.4" x2="-20.32" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-27.94" x2="22.86" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-27.94" x2="-7.62" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-27.94" x2="10.16" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-27.94" x2="22.86" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="22.86" y1="-27.94" x2="22.86" y2="25.4" width="0.254" layer="94"/>
 <wire x1="22.86" y1="25.4" x2="-20.32" y2="25.4" width="0.254" layer="94"/>
 <text x="-20.32" y="-30.48" size="1.778" layer="95">&gt;NAME</text>
 <text x="-20.32" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-7.62" y1="-27.94" x2="-7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="-27.94" width="0.254" layer="94"/>
+<text x="-5.08" y="-25.4" size="5.08" layer="94">USB</text>
+<wire x1="-5.08" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="20.32" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
+<circle x="0" y="19.05" radius="0.803215625" width="0.254" layer="94"/>
+<circle x="2.54" y="19.05" radius="0.803215625" width="0.254" layer="94"/>
+<circle x="5.08" y="19.05" radius="0.803215625" width="0.254" layer="94"/>
+<circle x="-2.54" y="19.05" radius="0.803215625" width="0.254" layer="94"/>
+<text x="-1.524" y="15.748" size="1.778" layer="94">prog</text>
 </symbol>
 <symbol name="MAX_RS485_HCMODU0081">
 <pin name="GND" x="-25.4" y="5.08" length="middle"/>
@@ -3951,6 +3966,8 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <part name="X12" library="con-molex" deviceset="KK-156-2" device=""/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="M1206" value="3k3"/>
 <part name="P+11" library="supply1" deviceset="VCC" device="" value="VCC_5V"/>
+<part name="X13" library="con-molex" deviceset="KK-156-2" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4045,6 +4062,9 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <instance part="X12" gate="-2" x="40.64" y="119.38"/>
 <instance part="R9" gate="G$1" x="30.48" y="119.38" rot="R180"/>
 <instance part="P+11" gate="VCC" x="33.02" y="129.54"/>
+<instance part="X13" gate="-1" x="287.02" y="68.58"/>
+<instance part="X13" gate="-2" x="287.02" y="63.5"/>
+<instance part="GND12" gate="1" x="281.94" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -4135,6 +4155,12 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <wire x1="281.94" y1="124.46" x2="281.94" y2="127" width="0.1524" layer="91"/>
 <pinref part="X10" gate="-2" pin="S"/>
 <wire x1="281.94" y1="127" x2="284.48" y2="127" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="281.94" y1="60.96" x2="281.94" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="X13" gate="-2" pin="S"/>
+<wire x1="281.94" y1="63.5" x2="284.48" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_5V" class="0">
@@ -4517,6 +4543,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <segment>
 <wire x1="76.2" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
 <label x="83.82" y="99.06" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PB9"/>
 </segment>
 </net>
 <net name="ENC1_SH" class="0">
@@ -4528,6 +4555,7 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <segment>
 <wire x1="76.2" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <label x="83.82" y="96.52" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="PB8"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -4544,6 +4572,18 @@ Source: http://www.molex.com/pdm_docs/sd/026604100_sd.pdf</description>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="X12" gate="-2" pin="S"/>
 <wire x1="35.56" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="BTTN_STOP_REQST" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PB0"/>
+<wire x1="22.86" y1="76.2" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
+<label x="12.7" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="284.48" y1="68.58" x2="274.32" y2="68.58" width="0.1524" layer="91"/>
+<label x="274.32" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="X13" gate="-1" pin="S"/>
 </segment>
 </net>
 </nets>
