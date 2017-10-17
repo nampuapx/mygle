@@ -13686,11 +13686,12 @@ Source: http://www.osram.convergy.de/</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.508" drill="0">
 </class>
-<class number="1" name="f220" width="0" drill="0">
+<class number="1" name="f220" width="1.524" drill="0">
+<clearance class="1" value="1.27"/>
 </class>
-<class number="2" name="24pow" width="0.508" drill="0">
+<class number="2" name="24pow" width="1.016" drill="0">
 </class>
 </classes>
 <parts>
@@ -13743,9 +13744,9 @@ Source: http://www.osram.convergy.de/</description>
 <part name="P+5" library="supply1" deviceset="VCC/2" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC/2" device=""/>
 <part name="LED1" library="adafruit" deviceset="LED" device="5MM" value="FYL-5013HD"/>
-<part name="LED2" library="adafruit" deviceset="LED" device="5MM"/>
-<part name="LED3" library="adafruit" deviceset="LED" device="5MM"/>
-<part name="LED4" library="adafruit" deviceset="LED" device="5MM"/>
+<part name="LED2" library="adafruit" deviceset="LED" device="5MM" value="FYL-5013HD"/>
+<part name="LED3" library="adafruit" deviceset="LED" device="5MM" value="FYL-5013HD"/>
+<part name="LED4" library="adafruit" deviceset="LED" device="5MM" value="FYL-5013HD"/>
 <part name="R27" library="rcl" deviceset="R-EU_" device="M0805" value="2k2"/>
 <part name="R28" library="rcl" deviceset="R-EU_" device="M0805" value="2k2"/>
 <part name="R29" library="rcl" deviceset="R-EU_" device="M0805" value="2k2"/>
@@ -13754,8 +13755,6 @@ Source: http://www.osram.convergy.de/</description>
 <part name="X_HTR" library="con-wago_804" deviceset="804-108" device=""/>
 <part name="X_TERM_RES" library="con-wago_804" deviceset="804-108" device=""/>
 <part name="X_24IN" library="con-wago_804" deviceset="804-104" device=""/>
-<part name="SUPPLY8" library="supply2" deviceset="+24V" device=""/>
-<part name="P+8" library="supply1" deviceset="VCC/2" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="VCC/2" device=""/>
@@ -13775,6 +13774,9 @@ Source: http://www.osram.convergy.de/</description>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.3" value="MOUNT-HOLE3.3"/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.3" value="MOUNT-HOLE3.3"/>
 <part name="H5" library="holes" deviceset="MOUNT-HOLE" device="3.3" value="MOUNT-HOLE3.3"/>
+<part name="H6" library="holes" deviceset="MOUNT-HOLE" device="3.3" value="MOUNT-HOLE3.3"/>
+<part name="SUPPLY7" library="supply2" deviceset="+24V" device=""/>
+<part name="P+7" library="supply1" deviceset="VCC/2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13845,8 +13847,6 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="X_HTR" gate="G$1" x="393.7" y="142.24"/>
 <instance part="X_TERM_RES" gate="G$1" x="327.66" y="144.78"/>
 <instance part="X_24IN" gate="G$1" x="218.44" y="152.4"/>
-<instance part="SUPPLY8" gate="+24V" x="195.58" y="160.02" rot="R90"/>
-<instance part="P+8" gate="G$1" x="195.58" y="149.86" rot="R90"/>
 <instance part="GND13" gate="1" x="203.2" y="154.94" rot="R270"/>
 <instance part="GND14" gate="1" x="203.2" y="144.78" rot="R270"/>
 <instance part="P+9" gate="G$1" x="226.06" y="15.24"/>
@@ -13861,11 +13861,14 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="P+3" gate="G$1" x="353.06" y="38.1"/>
 <instance part="SUPPLY1" gate="+24V" x="198.12" y="109.22"/>
 <instance part="SUPPLY4" gate="+24V" x="353.06" y="106.68"/>
-<instance part="H1" gate="G$1" x="114.3" y="160.02"/>
-<instance part="H2" gate="G$1" x="114.3" y="152.4"/>
-<instance part="H3" gate="G$1" x="114.3" y="144.78"/>
-<instance part="H4" gate="G$1" x="114.3" y="137.16"/>
-<instance part="H5" gate="G$1" x="114.3" y="129.54"/>
+<instance part="H1" gate="G$1" x="241.3" y="172.72"/>
+<instance part="H2" gate="G$1" x="241.3" y="165.1"/>
+<instance part="H3" gate="G$1" x="241.3" y="157.48"/>
+<instance part="H4" gate="G$1" x="241.3" y="149.86"/>
+<instance part="H5" gate="G$1" x="241.3" y="142.24"/>
+<instance part="H6" gate="G$1" x="241.3" y="134.62"/>
+<instance part="SUPPLY7" gate="+24V" x="190.5" y="149.86" rot="R90"/>
+<instance part="P+7" gate="G$1" x="190.5" y="160.02" rot="R90"/>
 </instances>
 <busses>
 <bus name="TR11,TR12,TR21,TR22,TR31,TR32,TR41,TR42,GND">
@@ -13954,14 +13957,6 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="322.58" y1="101.6" x2="320.04" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X_24IN" gate="G$1" pin="P1.1"/>
-<pinref part="X_24IN" gate="G$1" pin="P1.2"/>
-<wire x1="218.44" y1="160.02" x2="213.36" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="SUPPLY8" gate="+24V" pin="+24V"/>
-<wire x1="198.12" y1="160.02" x2="213.36" y2="160.02" width="0.1524" layer="91"/>
-<junction x="213.36" y="160.02"/>
-</segment>
-<segment>
 <pinref part="SUPPLY9" gate="+24V" pin="+24V"/>
 <pinref part="U$1" gate="G$3" pin="V+"/>
 <wire x1="228.6" y1="86.36" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
@@ -14011,6 +14006,14 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="368.3" y1="144.78" x2="388.62" y2="144.78" width="0.1524" layer="91"/>
 <junction x="388.62" y="144.78"/>
 <label x="372.872" y="145.542" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SUPPLY7" gate="+24V" pin="+24V"/>
+<wire x1="193.04" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="X_24IN" gate="G$1" pin="P3.1"/>
+<pinref part="X_24IN" gate="G$1" pin="P3.2"/>
+<wire x1="218.44" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
+<junction x="213.36" y="149.86"/>
 </segment>
 </net>
 <net name="GND" class="2">
@@ -14300,14 +14303,6 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="P+6" gate="G$1" pin="VCC/2"/>
 </segment>
 <segment>
-<pinref part="X_24IN" gate="G$1" pin="P3.1"/>
-<pinref part="X_24IN" gate="G$1" pin="P3.2"/>
-<wire x1="218.44" y1="149.86" x2="213.36" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="P+8" gate="G$1" pin="VCC/2"/>
-<wire x1="213.36" y1="149.86" x2="198.12" y2="149.86" width="0.1524" layer="91"/>
-<junction x="213.36" y="149.86"/>
-</segment>
-<segment>
 <pinref part="P+9" gate="G$1" pin="VCC/2"/>
 <pinref part="U$2" gate="G$3" pin="V+"/>
 <wire x1="226.06" y1="12.7" x2="226.06" y2="10.16" width="0.1524" layer="91"/>
@@ -14357,6 +14352,14 @@ Source: http://www.osram.convergy.de/</description>
 <label x="372.872" y="135.382" size="1.778" layer="95"/>
 <wire x1="368.3" y1="134.62" x2="388.62" y2="134.62" width="0.1524" layer="91"/>
 <junction x="388.62" y="134.62"/>
+</segment>
+<segment>
+<pinref part="P+7" gate="G$1" pin="VCC/2"/>
+<wire x1="213.36" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="X_24IN" gate="G$1" pin="P1.1"/>
+<pinref part="X_24IN" gate="G$1" pin="P1.2"/>
+<wire x1="218.44" y1="160.02" x2="213.36" y2="160.02" width="0.1524" layer="91"/>
+<junction x="213.36" y="160.02"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -14483,11 +14486,15 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="152.4" y1="99.06" x2="152.4" y2="101.6" width="0.1524" layer="91"/>
 <junction x="152.4" y="101.6"/>
 <junction x="127" y="88.9"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="88.9" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="86.36" x2="104.14" y2="88.9" width="0.1524" layer="91"/>
 <label x="109.22" y="88.9" size="1.778" layer="95"/>
+<wire x1="144.6276" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="142.24" y1="71.12" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="71.12" x2="147.32" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="71.12" x2="144.9324" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="144.6276" y1="71.12" x2="144.9324" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TR21" class="0">
