@@ -4829,6 +4829,8 @@ I2C</description>
 <part name="X4" library="con-molex" deviceset="KK-156-2" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
+<part name="R10" library="rcl" deviceset="R-EU_" device="M1206" value="10k"/>
+<part name="P+2" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4925,6 +4927,8 @@ I2C</description>
 <instance part="X4" gate="-2" x="294.64" y="76.2"/>
 <instance part="GND7" gate="1" x="289.56" y="71.12"/>
 <instance part="+3V1" gate="G$1" x="160.02" y="83.82"/>
+<instance part="R10" gate="G$1" x="109.22" y="101.6" rot="R270"/>
+<instance part="P+2" gate="1" x="109.22" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -5260,8 +5264,10 @@ I2C</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PA10"/>
-<wire x1="76.2" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
-<label x="83.82" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="76.2" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
+<label x="114.3" y="73.66" size="1.27" layer="95" xref="yes"/>
+<wire x1="83.82" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="73.66" x2="83.82" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ENC0_SH" class="0">
@@ -5389,6 +5395,11 @@ I2C</description>
 <pinref part="P+11" gate="1" pin="+5V"/>
 <wire x1="101.6" y1="99.06" x2="101.6" y2="101.6" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="109.22" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -5421,8 +5432,8 @@ I2C</description>
 <net name="TIC_RESET" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PB3"/>
-<wire x1="76.2" y1="83.82" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
-<label x="109.22" y="83.82" size="1.27" layer="95" xref="yes"/>
+<wire x1="76.2" y1="83.82" x2="114.3" y2="83.82" width="0.1524" layer="91"/>
+<label x="114.3" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RS485DIRECT" class="0">
@@ -5431,9 +5442,9 @@ I2C</description>
 <wire x1="76.2" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="101.6" y1="86.36" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="86.36" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
 <junction x="101.6" y="86.36"/>
-<label x="109.22" y="86.36" size="1.27" layer="95" xref="yes"/>
+<label x="114.3" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DE"/>
@@ -5461,8 +5472,12 @@ I2C</description>
 <net name="UART1_TX_MAX_I" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PA9"/>
-<wire x1="76.2" y1="71.12" x2="83.82" y2="71.12" width="0.1524" layer="91"/>
-<label x="83.82" y="71.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="76.2" y1="71.12" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
+<label x="114.3" y="71.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="96.52" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
+<junction x="109.22" y="71.12"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DI"/>
