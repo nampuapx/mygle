@@ -2,3 +2,4 @@
 *.s#?
 *.b#?
 .svn
+/voron3_power/out
