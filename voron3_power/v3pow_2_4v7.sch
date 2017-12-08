@@ -14173,8 +14173,8 @@ chip</description>
 <part name="H6" library="holes" deviceset="MOUNT-HOLE" device="3.3" value="MOUNT-HOLE3.3"/>
 <part name="SUPPLY7" library="supply2" deviceset="+24V" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC/2" device=""/>
-<part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="1206"/>
-<part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="1206"/>
+<part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
+<part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="1206" value="10uF"/>
 </parts>
 <sheets>
 <sheet>

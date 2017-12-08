@@ -7524,8 +7524,8 @@ design rules under a new name.</description>
 <element name="H4" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="56" y="11"/>
 <element name="H5" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="130" y="31"/>
 <element name="H6" library="holes" package="3,3" value="MOUNT-HOLE3.3" x="97" y="31"/>
-<element name="C2" library="microbuilder" package="1206" value="" x="25.6" y="20.4" rot="MR270"/>
-<element name="C5" library="microbuilder" package="1206" value="" x="39.4" y="20.4" rot="MR270"/>
+<element name="C2" library="microbuilder" package="1206" value="10uF" x="25.6" y="20.4" rot="MR270"/>
+<element name="C5" library="microbuilder" package="1206" value="10uF" x="39.4" y="20.4" rot="MR270"/>
 </elements>
 <signals>
 <signal name="+24V" class="2">
