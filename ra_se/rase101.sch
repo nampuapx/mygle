@@ -4855,7 +4855,7 @@ I2C</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="OK1" library="optocoupler" deviceset="6N138" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="M1206" value="3k3"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="M1206" value="470R"/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-10"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="M1206" value="220"/>
 <part name="IC1" library="74xx-eu" deviceset="74*14" device="D" technology="HC"/>
@@ -4905,6 +4905,7 @@ I2C</description>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="kolio_oled" deviceset="OLED_0.96" device=""/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="M1206" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -5000,6 +5001,7 @@ I2C</description>
 <instance part="+3V6" gate="G$1" x="200.66" y="68.58" rot="R90"/>
 <instance part="GND15" gate="1" x="195.58" y="66.04" rot="R270"/>
 <instance part="U$3" gate="G$1" x="231.14" y="68.58" rot="R90"/>
+<instance part="R1" gate="G$1" x="76.2" y="137.16" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -5029,9 +5031,13 @@ I2C</description>
 </segment>
 <segment>
 <wire x1="60.96" y1="139.7" x2="63.5" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="139.7" x2="63.5" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="139.7" x2="63.5" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="OK1" gate="G$1" pin="GND"/>
 <pinref part="GND23" gate="1" pin="GND"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="137.16" x2="63.5" y2="135.89" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="137.16" x2="63.5" y2="137.16" width="0.1524" layer="91"/>
+<junction x="63.5" y="137.16"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -5644,6 +5650,17 @@ I2C</description>
 <pinref part="U$1" gate="G$1" pin="PB11"/>
 <wire x1="22.86" y1="68.58" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
 <label x="12.7" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="OK1" gate="G$1" pin="VB"/>
+<wire x1="60.96" y1="147.32" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="147.32" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="142.24" x2="83.82" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="142.24" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="137.16" x2="81.28" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
